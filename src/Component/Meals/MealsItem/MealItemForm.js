@@ -13,7 +13,7 @@ function MealItemForm(props) {
     max:'5',
     step:'1',
     defaultValue:'1'
- }}/>
+ }}></Input>
       <button>+ Add</button>
     </form>
   );
