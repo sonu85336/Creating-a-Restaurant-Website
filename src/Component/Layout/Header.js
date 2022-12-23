@@ -3,12 +3,13 @@ import HeaderCartButton from './HeaderCartButton';
 import classes from "./Header.module.css";
 import mealsImage from '../../assests/meals.jpg'
  
-function Header() {
+function Header(props ) {
+   
   return (
     <Fragment>
       <header className={classes.header}>
         <h1> Delicious Meals</h1>
-        <HeaderCartButton></HeaderCartButton>
+        <HeaderCartButton  onmodalshow={props.showoncart}></HeaderCartButton>
          
       </header>
       <div  className={classes['main-image']}>
