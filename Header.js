@@ -9,7 +9,7 @@ function Header(props ) {
     <Fragment>
       <header className={classes.header}>
         <h1> Delicious Meals</h1>
-        <HeaderCartButton  onmodalshow={props.showoncart}></HeaderCartButton>
+        <HeaderCartButton  onClick={props.onShowCart}></HeaderCartButton>
          
       </header>
       <div  className={classes['main-image']}>
