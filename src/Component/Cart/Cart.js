@@ -1,15 +1,15 @@
-import React  from 'react'
-import HeaderCartButton from '../Layout/HeaderCartButton';
+import React,{useContext}  from 'react'
+ ;
 import Modal from "../UI/Modal";
 import classes from "./Cart.module.css";
-
+ import CartContext from '../../Store/cart-context';
 const Cart  = (props) => {
-
+const cartcntx= useContext(CartContext)
  
   const cartItem = (
     <ul className={classes["cart-items"]}>
-      {[{ id: "c1", name: "Sushi", amount: 2, price: 12.99 }].map((item) => (
-        <li>{item.name}</li>
+      { cartcntx.items.map((item) => (
+        <li>Name:{item.name} Price:{item.price}  Quantity:{item.quantity}</li>
       ))}
     </ul>
   );
@@ -19,6 +19,7 @@ const Cart  = (props) => {
    
     
      <Modal  closeoncart={props.closeoncart}> <div className={classes.total}>
+     {cartItem}
         <span>Total Amount</span>
         <span>35.62</span>
       </div>
