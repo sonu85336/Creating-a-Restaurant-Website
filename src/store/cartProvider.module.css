@@ -1,0 +1,15 @@
+/* .warning {
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    background-color: rgb(165, 64, 20);
+  } */
+.warning {
+  margin: auto auto auto 80%;
+  color: white;
+  background: #641e03;
+  font-size: 40px;
+  padding: 5px 20px 10px 20px;
+  border: 1px solid white;
+  border-radius: 8px;
+}
